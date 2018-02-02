@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebApplication1DbTablesOrdersHandlerModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="WebApplication1.DbTables.OrdersHandlerModel.Item">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="remainder" ColumnName="remainder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="WebApplication1.DbTables.OrdersHandlerModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="itemsList" ColumnName="itemsList" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
